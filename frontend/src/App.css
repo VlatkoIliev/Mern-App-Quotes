@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: dodgerblue;
+  color: white;
+  position: fixed;
+  z-index: 1;
+}
+
+.header__logo {
+  display: block;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.quote {
+  padding: 20px;
+}
+
+.loader {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.btn-container {
+  max-width: 350px;
+  width: 350px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.btn--get-quote {
+  background-color: goldenrod;
+}
+
+.btn--back {
+  text-decoration: none;
+  background-color: chocolate;
+}
+
+.btn--get-random {
+  text-decoration: none;
+  background-color: goldenrod;
+}
