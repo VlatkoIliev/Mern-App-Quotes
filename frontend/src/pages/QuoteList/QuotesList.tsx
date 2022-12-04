@@ -35,7 +35,7 @@ const QuotesList = () => {
         <TableHead>
           <TableRow>
             <TableCell>
-              <TableHeadName>Anime</TableHeadName>
+              <TableHeadName>ID</TableHeadName>
             </TableCell>
             <TableCell align='left'>
               <TableHeadName>Character</TableHeadName>
@@ -53,7 +53,7 @@ const QuotesList = () => {
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell component='th' scope='row'>
-                  {item.anime}
+                  {item._id}
                 </TableCell>
 
                 <TableCell align='left'>{item.character}</TableCell>

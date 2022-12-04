@@ -8,8 +8,8 @@ const getQuotes = expressAsyncHandler(async (req: Request, res: Response) => {
   res.status(200).json(quotes);
   if (quotes) {
   } else {
-    res.status(400);
-    throw new Error('Bad request');
+    res.status(500);
+    throw new Error('Some error occured while retrieving data');
   }
 });
 
