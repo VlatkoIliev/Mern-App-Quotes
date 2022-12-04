@@ -13,7 +13,7 @@ import { QuotesPage, TableHeadName } from './styles';
 
 const QuotesList = () => {
   const [quotes, setQuotes] = useState<Quote[]>([]);
-  const { loading, error, data } = useFetch('/quotes');
+  const { loading, error, data } = useFetch('/quotes?limit=10');
 
   useEffect(() => {
     if (data) {

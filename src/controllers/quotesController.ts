@@ -4,7 +4,8 @@ import Quote from '../model/quoteModel';
 import { IQuote } from '../types/IQuote';
 
 const getQuotes = expressAsyncHandler(async (req: Request, res: Response) => {
-  const quotes: IQuote[] = await Quote.find();
+  const size = req.query.limit as unknown as number;
+  const quotes: IQuote[] = await Quote.find().limit(size);
   res.status(200).json(quotes);
   if (quotes) {
   } else {
