@@ -10,7 +10,7 @@ const getQuotes = expressAsyncHandler(async (req: Request, res: Response) => {
   if (quotes) {
   } else {
     res.status(500);
-    throw new Error('Some error occured while retrieving data');
+    throw new Error('Some error occured while retrieving data from database');
   }
 });
 
